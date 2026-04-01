@@ -7,6 +7,7 @@ const GITHUB_REPO = process.env.GITHUB_REPO!; // "owner/repo"
 export async function POST(req: NextRequest) {
   const body = await req.json();
 
+  console.log("Received Figma webhook:", body);
   // 1. Verificar passcode do Figma
   if (body.passcode !== FIGMA_PASSCODE) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
