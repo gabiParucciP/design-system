@@ -1,9 +1,10 @@
+"use client";
 import Button from "./components/Button";
 
 export default function Home() {
   return (
-    <div>
-      <Button onClick={() => alert("Button clicked!")}>Click Me</Button>
+    <div className="h-screen w-full flex items-center justify-center">
+      <Button>Click Me</Button>
     </div>
   );
 }

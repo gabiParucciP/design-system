@@ -53,7 +53,7 @@ Se não houver nenhuma diferença, informe que os tokens estão sincronizados e 
 
 Leia os dois arquivos que serão modificados:
 
-- `tailwind.config.ts` — contém o mapeamento de cores do Tailwind
+- `globals.css` — contém o mapeamento de cores do Tailwind
 - `src/components/Button.tsx` — usa as classes Tailwind definidas no config
 
 ### 6. Aplicar as alterações
@@ -61,6 +61,7 @@ Leia os dois arquivos que serão modificados:
 Após confirmação do usuário, atualize os arquivos seguindo estas regras:
 
 **tailwind.config.ts:**
+
 - Mapeie os nomes das variáveis do Figma para nomes semânticos do Tailwind:
   - `Colors/Primary/500__Default` → `colors.primary`
   - `Colors/Secondary/500__Default` → `colors.secondary`
@@ -72,6 +73,7 @@ Após confirmação do usuário, atualize os arquivos seguindo estas regras:
 - Para variáveis novas: adicione no bloco `colors` seguindo a organização existente
 
 **src/components/Button.tsx:**
+
 - Atualize os valores de `className` apenas se os nomes das cores no Tailwind mudaram
 - Não altere props, lógica ou estrutura do componente
 
