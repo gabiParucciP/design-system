@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
 
   // 2. Só reagir a publicações da library correta
   if (
-    body.event_type !== "LIBRARY_PUBLISH" ||
+    body.event_type !== "FILE_VERSION_UPDATE" ||
     body.file_key !== "Lt10bBK2NAbygocsLpxtIM"
   ) {
     return NextResponse.json({ skipped: true });
