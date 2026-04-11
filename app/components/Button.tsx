@@ -1,10 +1,14 @@
 export default function Button({ children }: { children: React.ReactNode }) {
   return (
     <button
-      onClick={() => console.log("Button clicked!")}
-      className="bg-primary hover:bg-secondary text-label py-2.5 px-7.5 rounded-lg"
+      style={{
+        backgroundColor: "#d9d9d9",
+        color: "#000000",
+        borderRadius: "8px",
+      }}
+      className="py-2.5 px-7.5"
     >
-      {children}
+      {children ?? "Button"}
     </button>
   );
 }
